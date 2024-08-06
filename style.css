@@ -1,0 +1,550 @@
+body {
+    background-color: rgba(252, 242, 233, 1) !important;
+}
+
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+    color: rgba(158, 176, 170, 1) !important;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.nav-link:hover {
+    color: rgba(110, 142, 132, 1) !important;
+    text-align: center;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.foglalasButton {
+    background-color: #F5E9DE;
+    color: #808285;
+    border-radius: 60px;
+    width: 196px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: -20px; /* Gomb felfelé tolása 20 pixellel */
+}
+
+.foglalasButton:hover {
+    background-color: #87B1A1;
+    color: white;
+}
+
+.imageButton {
+    display: flex;
+    width: 306px;
+    padding: 10px 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 60px;
+    background-color: #F5E9DE;
+    position: absolute;
+    top: 65%;
+    left: 51%;
+    transform: translate(-200%, -80%);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    color: #808285;
+}
+
+/* Tablet és laptop nézetre */
+@media (max-width: 1320px) {
+    .imageButton {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin: 20px auto;
+        /* Középre helyezi a gombot */
+        display: block;
+        /* Blokkszintű elemként jeleníti meg */
+        background-color: #87B1A1;
+    }
+}
+
+.indexText1 {
+    color: #414042;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+
+    /* H2 */
+    font-family: Raleway;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.088px;
+    padding-bottom: 10px;
+}
+
+.avatar{
+    margin-top: 100px;
+}
+
+.indexText2 {
+    margin-top: 33px;
+    color: #414042;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.063px;
+}
+
+.indexText3 {
+    margin-top: 33px;
+    margin-bottom: 100px;
+    color: #414042;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+
+    /* P */
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
+    letter-spacing: 0.1px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+ul li {
+    color: rgb(4, 126, 104) !important;
+}
+
+.footerA {
+    text-decoration: none;
+    color: white !important;
+}
+
+.footer img.soc {
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+    /* Általános átmenet a méret- és színváltozásra */
+}
+
+/* Hover állapot stílus */
+.footer img.soc:hover {
+    transform: scale(1.2);
+    /* Növeli az ikon méretét 20%-kal */
+    filter: brightness(0) saturate(100%) invert(94%) sepia(5%) saturate(132%) hue-rotate(86deg) brightness(97%) contrast(95%);
+    /* Átszínezi az ikonokat a megadott színre */
+}
+
+.impresszumP {
+    text-decoration: none;
+    color: rgb(4, 126, 104) !important;
+}
+
+.impresszum {
+    text-decoration: none;
+    color: white !important;
+}
+
+.impresszum:hover {
+    text-decoration: none;
+    color: rgb(4, 126, 104) !important;
+}
+
+.price,
+.service {
+    font-weight: bold;
+}
+
+ul li {
+    padding: 3px;
+}
+
+.footer {
+    background-image: url(képek/footer.png);
+    background-color: rgba(158, 174, 168, 1);
+    background-size: cover;
+    /* A kép kitölti az egész elemet, megőrzi az arányokat */
+    height: 250px;
+    align-items: center;
+    /* Függőleges középre helyezés */
+}
+
+/*Szolgáltatás*/
+
+.szolgaltatasBody {
+    position: relative;
+    background-image: url(képek/szolgaltatasok.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    /* Fix magasság: teljes magasságú képernyő */
+}
+
+
+.accordion-button {
+    background-color: rgba(158, 174, 168, 1);
+    color: white;
+    /* Gomb háttérszíne */
+}
+
+.szolgaltatasBody {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    /* A tartalom a konténer tetején kezdődik */
+    justify-content: center;
+    overflow-y: auto;
+    /* Függőleges görgetés engedélyezése */
+    padding: 20px;
+    padding-top: 270px;
+    /* Párnázás hozzáadása */
+}
+
+.custom-hr {
+    margin: 10px auto;
+    /* Csökkentett távolság a szöveg és a hr között */
+    border: 0;
+    border-top: 2px solid white;
+    /* Egy vékony, szürke vonal */
+    width: 97%;
+    text-align: center;
+}
+
+.accordion {
+    border: none;
+    /* Keret eltávolítása */
+    width: 1200px;
+    max-width: 2500px;
+    /* Beállíthatod a kívánt maximális szélességet */
+    border-radius: 15px;
+    /* Lekerekítés az egész accordion-ra */
+    overflow: hidden;
+    /* Biztosítja, hogy a lekerekített sarkak ne lóghassanak ki */
+}
+
+.accordion-item {
+    background-color: rgba(158, 174, 168, 1);
+    /* Szürke háttér az egyes elemeknél */
+    border: none;
+    /* Keret eltávolítása */
+
+}
+
+.accordion-header .accordion-button {
+    background-color: rgba(158, 174, 168, 1);
+    color: white;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    /* Gombok széleinek lekerekítése eltávolítása */
+    padding: 15px;
+    /* Nagyobb belső margó a gomboknál */
+    border-bottom: none;
+    /* Gombok széleinek lekerekítése eltávolítása */
+}
+
+.accordion-header .accordion-button:not(.collapsed) {
+    background-color: rgba(158, 174, 168, 1);
+    /* Nyitott állapotban is szürke háttér */
+}
+
+.accordion-body {
+    background-color: rgba(158, 174, 168, 1);
+    /* Szürke háttér a tartalomnál */
+    color: white;
+    /* Fehér szöveg a tartalomnál */
+    border-radius: 0 0 15px 15px;
+    /* Lekerekített sarkak az accordion-body alján */
+}
+
+.accordion-button::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-left: 0.6em solid transparent;
+    /* Nyíl szélessége */
+    border-right: 0.6em solid transparent;
+    /* Nyíl szélessége */
+    border-top: 0.8em solid white;
+    /* Csukott állapotban lefelé néző nyíl */
+    vertical-align: middle;
+    margin-right: 1em;
+    /* Távolság a nyíl és a szöveg között */
+    transition: transform 0.2s ease-in-out;
+    transform: rotate(0deg);
+    /* Alapértelmezett állapotban a nyíl lefelé néz */
+}
+
+.szolgaltatasText {
+    color: white !important;
+}
+
+/* Reszponzív design */
+@media (max-width: 1299px) and (min-width: 992px) {
+    .accordion {
+        max-width: 900px;
+        /* 992px és 1200px között */
+    }
+}
+
+@media (max-width: 992px) and (min-width: 768px) {
+    .accordion {
+        max-width: 700px;
+        /* 768px és 992px között */
+    }
+}
+
+@media (max-width: 768px) and (min-width: 690px) {
+    .accordion {
+        max-width: 500px;
+        /* 690px és 768px között */
+    }
+}
+
+@media (max-width: 690px) and (min-width: 400px) {
+    .accordion {
+        max-width: 300px;
+        /* 690px alatt teljes szélesség */
+    }
+}
+
+@media (max-width: 399px) {
+    .accordion {
+        max-width: 270px;
+    }
+}
+
+/* Árak*/
+
+.arakTableTh {
+    background-color: #9EAEA8 !important;
+}
+
+.arakTableTd1 {
+    background-color: #F3E0D0 !important;
+    color: #61646C !important;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.08px;
+}
+
+.arakTableTd2 {
+    background-color: #E0EAE6 !important;
+    color: #61646C !important;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+    font-family: Raleway;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.08px;
+}
+
+.arakHeader {
+    color: #414042;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+
+    /* H2 */
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-family: Raleway;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.088px;
+}
+
+.arakP {
+    color: #414042;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.063px;
+}
+
+.szolgaltatasB {
+    background-color: #9EAEA8 !important;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    /* P Bold */
+    -webkit-text-stroke-width: 1;
+    -webkit-text-stroke-color: #000;
+    font-family: Raleway;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    /* 150% */
+    letter-spacing: 0.1px;
+}
+
+/*Foglaláso*/
+.foglalasiHeader {
+    color: #414042;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+
+    /* H2 */
+    font-family: Raleway;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.088px;
+}
+
+.foglalasiP {
+    background-color: #9EB0AA !important;
+    color: white !important;
+
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.063px;
+}
+
+.foglalasiLi {
+    color: #61646C;
+
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+    /* P */
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
+    letter-spacing: 0.1px;
+}
+
+.foglalasiP2 {
+    color: #61646C;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.063px;
+}
+
+.foglalasiP3 {
+    color: #61646C;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+
+    /* P */
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
+    letter-spacing: 0.1px;
+}
+
+.foglalasiP4 {
+    color: #61646C;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+
+    /* P */
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    /* 150% */
+    letter-spacing: 0.1px;
+}
+
+.foglalasiLi2 {
+    color: #61646C;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+
+    /* P */
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 150% */
+    letter-spacing: 0.1px;
+}
+
+.foglalasiP5 {
+    color: #61646C;
+    text-align: center;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-feature-settings: 'liga' off;
+    font-family: Raleway;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.063px;
+}
+
+.foglalasiKeret {
+    border-radius: 70px;
+    background: #F3E0D0;
+    padding-top: 15px !important;
+    margin: 5px auto !important;
+    /* Automatikus margó a középre igazításhoz */
+    width: 80%;
+    /* A keret szélességének beállítása */
+    max-width: 800px;
+    /* Opcionális, hogy maximális szélességet állíts be */
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.webdev{
+    text-decoration: none;
+    color: rgb(4, 126, 104) !important;
+}
